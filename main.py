@@ -2,7 +2,7 @@ import csv
 
 from flask import Flask, jsonify
 
-with open("data/articles.csv", encoding=) as f:
+with open("data/articles.csv", encoding="utf-8") as f:
     reader = csv.reader(f)
     data = list(reader)
     all_articles = data[1:]
